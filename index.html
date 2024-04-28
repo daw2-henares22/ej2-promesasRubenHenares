@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Cards</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <style>
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body class="bg-secondary ">
+    <div class="container">
+        <h1 class="mt-5 mb-4 text-center text-white">Pokémon Cards</h1>
+        <h2 class="mt-5 mb-4 text-center text-white">UF4: Exercici 2 Ruén Henares Hidalgo</h2>
+        <div class="row">
+          <div class="col-4">
+            <button id="primerBoton" class="btn btn-primary m-5 w-100"><div><strong>Exercici 2.1</strong></div><div>TIEMPO: 000 milisegundos</div></button>
+          </div>
+          <div class="col-4">
+            <button id="segundoBoton" class="btn btn-success m-5 w-100"><div><strong>Exercici 2.2</strong></div><div>TIEMPO: 000 milisegundos</div></button>
+          </div>
+          <div class="col-4">
+            <button id="tercerBoton" class="btn btn-warning  m-5 w-100"><div><strong>Exercici 2.3</strong></div><div>TIEMPO: 000 milisegundos</div></button>
+          </div>
+        </div>
+        <div class="rows row">
+
+          <!-- <div class="col-md-2">
+              <div class="card shadow">
+                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" class="card-img-top" alt="Bulbasaur">
+                  <div class="card-body">
+                      <h5 class="card-title">Bulbasaur</h5>
+                      <div class="card-text">ID: 1</div>
+                      <div class="card-text">Tipo: Grass, Poison</div>
+                      <div class="card-text">Peso: 69</div>
+                      <div class="card-text">Altura: 7</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2">
+              <div class="card shadow">
+                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png" class="card-img-top" alt="Ivysaur">
+                  <div class="card-body">
+                      <h5 class="card-title">Ivysaur</h5>
+                      <div class="card-text">ID: 2</div>
+                      <div class="card-text">Tipo: Grass, Poison</div>
+                      <div class="card-text">Peso: 130</div>
+                      <div class="card-text">Altura: 10</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2">
+              <div class="card shadow">
+                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png" class="card-img-top" alt="Venusaur">
+                  <div class="card-body">
+                      <h5 class="card-title">Venusaur</h5>
+                      <div class="card-text">ID: 3</div>
+                      <div class="card-text">Tipo: Grass, Poison</div>
+                      <div class="card-text">Peso: 1000</div>
+                      <div class="card-text">Altura: 20</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2">
+              <div class="card shadow">
+                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png" class="card-img-top" alt="Charmander">
+                  <div class="card-body">
+                      <h5 class="card-title">Charmander</h5>
+                      <div class="card-text">ID: 4</div>
+                      <div class="card-text">Tipo: Fire</div>
+                      <div class="card-text">Peso: 85</div>
+                      <div class="card-text">Altura: 6</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card shadow">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png" class="card-img-top" alt="Charmeleon">
+                <div class="card-body">
+                    <h5 class="card-title">Charmeleon</h5>
+                    <div class="card-text">ID: 5</div>
+                    <div class="card-text">Tipo: Fire</div>
+                    <div class="card-text">Peso: 190</div>
+                    <div class="card-text">Altura: 11</div>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+              <div class="card shadow">
+                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png" class="card-img-top" alt="Charizard">
+                  <div class="card-body">
+                      <h5 class="card-title">Charizard</h5>
+                      <div class="card-text">ID: 6</div>
+                      <div class="card-text">Tipo: Fire, Flying</div>
+                      <div class="card-text">Peso: 905</div>
+                      <div class="card-text">Altura: 17</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card shadow">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png" class="card-img-top" alt="Squirtle">
+                <div class="card-body">
+                    <h5 class="card-title">Squirtle</h5>
+                    <div class="card-text">ID: 7</div>
+                    <div class="card-text">Tipo: Water</div>
+                    <div class="card-text">Peso: 90</div>
+                    <div class="card-text">Altura: 5</div>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+              <div class="card shadow">
+                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png" class="card-img-top" alt="Wartortle">
+                  <div class="card-body">
+                      <h5 class="card-title">Wartortle</h5>
+                      <div class="card-text">ID: 8</div>
+                      <div class="card-text">Tipo: Water</div>
+                      <div class="card-text">Peso: 225</div>
+                      <div class="card-text">Altura: 10</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2">
+              <div class="card shadow">
+                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png" class="card-img-top" alt="Blastoise">
+                  <div class="card-body">
+                      <h5 class="card-title">Blastoise</h5>
+                      <div class="card-text">ID: 9</div>
+                      <div class="card-text">Tipo: Water</div>
+                      <div class="card-text">Peso: 855</div>
+                      <div class="card-text">Altura: 16</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2">
+              <div class="card shadow">
+                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png" class="card-img-top" alt="Caterpie">
+                  <div class="card-body">
+                      <h5 class="card-title">Caterpie</h5>
+                      <div class="card-text">ID: 10</div>
+                      <div class="card-text">Tipo: Bug</div>
+                      <div class="card-text">Peso: 29</div>
+                      <div class="card-text">Altura: 3</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card shadow">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png" class="card-img-top" alt="Metapod">
+                <div class="card-body">
+                    <h5 class="card-title">Metapod</h5>
+                    <div class="card-text">ID: 11</div>
+                    <div class="card-text">Tipo: Bug</div>
+                    <div class="card-text">Peso: 99</div>
+                    <div class="card-text">Altura: 7</div>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+              <div class="card shadow">
+                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png" class="card-img-top" alt="Butterfree">
+                  <div class="card-body">
+                      <h5 class="card-title">Butterfree</h5>
+                      <div class="card-text">ID: 12</div>
+                      <div class="card-text">Tipo: Bug, Flying</div>
+                      <div class="card-text">Peso: 320</div>
+                      <div class="card-text">Altura: 11</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2">
+              <div class="card shadow">
+                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png" class="card-img-top" alt="Weedle">
+                  <div class="card-body">
+                      <h5 class="card-title">Weedle</h5>
+                      <div class="card-text">ID: 13</div>
+                      <div class="card-text">Tipo: Bug, Poison</div>
+                      <div class="card-text">Peso: 32</div>
+                      <div class="card-text">Altura: 3</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2">
+              <div class="card shadow">
+                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png" class="card-img-top" alt="Kakuna">
+                  <div class="card-body">
+                      <h5 class="card-title">Kakuna</h5>
+                      <div class="card-text">ID: 14</div>
+                      <div class="card-text">Tipo: Bug, Poison</div>
+                      <div class="card-text">Peso: 100</div>
+                      <div class="card-text">Altura: 6</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2">
+              <div class="card shadow">
+                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png" class="card-img-top" alt="Beedrill">
+                  <div class="card-body">
+                      <h5 class="card-title">Beedrill</h5>
+                      <div class="card-text">ID: 15</div>
+                      <div class="card-text">Tipo: Bug, Poison</div>
+                      <div class="card-text">Peso: 295</div>
+                      <div class="card-text">Altura: 10</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2">
+              <div class="card shadow">
+                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png" class="card-img-top" alt="Pidgey">
+                  <div class="card-body">
+                      <h5 class="card-title">Pidgey</h5>
+                      <div class="card-text">ID: 16</div>
+                      <div class="card-text">Tipo: Normal, Flying</div>
+                      <div class="card-text">Peso: 18</div>
+                      <div class="card-text">Altura: 3</div>
+                  </div>
+              </div>
+          </div> -->
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-8hvayN/2b8mZzxY+4cS6H5BYQgGi3I9tnhJAmgyYEGg4+JbfeVc6m3U5V7y0I7M7" crossorigin="anonymous"></script>
+</body>
+</html>
